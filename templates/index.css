@@ -95,7 +95,7 @@ body,html {
 }
 #portfolio div h1 {
     font-size:40px;
-    background-image: linear-gradient(to left, white 0%, #00B0DA 100%);
+    background-image: linear-gradient(to left, #00B0DA 0%, #00B0DA 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -171,7 +171,7 @@ body,html {
     margin:30px 10px;
 }
 .btn_one:hover {
-    background:white;
+    background:#00B0DA;
     cursor:pointer;
     color:#000;
 }
@@ -264,7 +264,7 @@ body,html {
 }
 #footer a {
     font-size:18px;
-    background-image: linear-gradient(to left, white 0%, #003262 100%);
+    background-image: linear-gradient(to left, #00B0DA 0%, #00B0DA 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
