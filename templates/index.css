@@ -164,7 +164,7 @@ body,html {
     border-radius:50px;
     border:2px solid #fff;
     font-size:18px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa';
     font-weight:bold;
     background:transparent;
     transition:0.4s ease-in-out;
@@ -178,40 +178,11 @@ body,html {
 .project div {
     font-weight:normal;
 }
-.btn_two {
-    color:#000;
-    padding:10px 40px;
-    border-radius:50px;
-    border:2px solid #fff;
-    font-size:18px;
-    font-family: 'Comfortaa', cursive;
-    font-weight:bold;
-    background:#fff;
-    transition:0.4s ease-in-out;
-    margin:30px 10px;
-}
-.btn_two:hover {
-    background:transparent;
-    cursor:pointer;
-    color:#fff;
-}
+
 #details {
     margin:6vh 0px;
 }
-.btn_social {
-    font-size:18px;
-    color:#fff;
-    margin:40px 20px;
-    padding:15px 18px;
-    border-radius:50%;
-    background:#000;
-    transition:0.4s ease-in-out;
-}
-.btn_social:hover {
-    color:#000;
-    background:#fff;
-    cursor:pointer;
-}
+
 @media (max-width: 900px){
     #header {
         width:94%;
@@ -240,10 +211,7 @@ body,html {
         font-size:14px;
         padding:8px 20px;
     }
-    .btn_two {
-        font-size:14px;
-        padding:8px 20px;
-    }
+
     #contact form input {
         width:92%;
     }
@@ -310,11 +278,11 @@ button:focus {
 .text-1 {
     animation: text1;
   }
-  .text-2 {
+.text-2 {
     animation: text2;
   }
-  .text-1,
-  .text-2 {
+.text-1,
+.text-2 {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
@@ -323,8 +291,8 @@ button:focus {
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
   }
-  .text-1::after,
-  .text-2::after {
+.text-1::after,
+.text-2::after {
     content: "|";
     position: absolute;
     right: 0;
@@ -332,7 +300,7 @@ button:focus {
     animation-duration: 1s;
     animation-timing-function: steps(1, end);
   }
-  @keyframes text2 {
+@keyframes text2 {
     0%,
     50%,
     100% {
@@ -343,7 +311,7 @@ button:focus {
       width: 21.2em;
     }
   }
-  @keyframes text1 {
+@keyframes text1 {
     0%,
     50%,
     100% {
@@ -354,7 +322,7 @@ button:focus {
       width: 17em;
     }
   }
-  @keyframes caret {
+@keyframes caret {
     0%,
     100% {
       opacity: 0;
