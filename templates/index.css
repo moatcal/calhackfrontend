@@ -318,7 +318,7 @@ button:focus {
 .text-1::after,
 .text-2::after {
   content: "|";
-  position: absolute;
+  position: left;
   right: 0;
   animation: caret infinite;
   animation-duration: 1s;
