@@ -1,4 +1,19 @@
 
+$('input[type="file"]').change( function (e) {
+    //read data from file upload
+    // console.log(e.target.files[0]);
+    let reader = new FileReader();
+    // trigger filereader onload
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (event) {
+        let thisData = event.target.result;
+        // console.log(thisData);
+        let userUploadJSON = JSON.stringify(thisData);
+        localStorage.setItem("fileData", userUploadJSON);
+        console.log(userUploadJSON);
+    };
+
+});
 
 $(document).ready(function(){
     $("a").on('click', function(event) {
@@ -13,6 +28,7 @@ $(document).ready(function(){
        } 
       });
     
+      // expand clicking area
       const form = document.querySelector("form");
       fileInput = document.querySelector(".file-input");
       // form click event
