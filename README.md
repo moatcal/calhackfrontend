@@ -6,7 +6,7 @@
 
 ### Participants 
 
-> Mohammed Ali Abed, UC Berkeley 2022
-> Anish Dhanashekeran, RPI 2026
-> Duc
-> Dave
+> Mohammed Ali Abed, UC Berkeley 2022 <br>
+> Anish Dhanashekeran, RPI 2026 <br>
+> Duc, UC Berkeley 2022<br>
+> Dave, UC Berkeley 202X <br>
