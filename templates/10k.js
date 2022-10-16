@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     $("a").on('click', function(event) {
       if (this.hash !== "") {
@@ -10,6 +12,13 @@ $(document).ready(function(){
        });
        } 
       });
+    
+      const form = document.querySelector("form");
+      fileInput = document.querySelector(".file-input");
+      // form click event
+      form.addEventListener("click", () =>{
+        fileInput.click();
+        });
   });
   
   var width = $(window).width(); 
