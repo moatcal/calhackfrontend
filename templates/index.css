@@ -287,7 +287,7 @@ button:focus {
     background: #f1f1f1; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #000; 
+    background: #00B0DA; 
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #46535E; 
