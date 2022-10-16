@@ -43,7 +43,7 @@ body,html {
 }
 #title {
     font-size:40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    background-image: linear-gradient(to left, white 0%, white 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -73,7 +73,7 @@ body,html {
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&w=1351&q=80") center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("imgs/sentient.jpg") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
@@ -93,7 +93,7 @@ body,html {
 }
 #portfolio div h1 {
     font-size:40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    background-image: linear-gradient(to left, white 0%, blue 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -305,3 +305,59 @@ button:focus {
 50% {background-position: 100% 50%}
 100% {background-position: 0% 50%}
 }
+.text-1 {
+    animation: text1;
+  }
+  .text-2 {
+    animation: text2;
+  }
+  .text-1,
+  .text-2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  .text-1::after,
+  .text-2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  @keyframes text2 {
+    0%,
+    50%,
+    100% {
+      width: 0;
+    }
+    60%,
+    90% {
+      width: 21.2em;
+    }
+  }
+  @keyframes text1 {
+    0%,
+    50%,
+    100% {
+      width: 0;
+    }
+    10%,
+    40% {
+      width: 17em;
+    }
+  }
+  @keyframes caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
